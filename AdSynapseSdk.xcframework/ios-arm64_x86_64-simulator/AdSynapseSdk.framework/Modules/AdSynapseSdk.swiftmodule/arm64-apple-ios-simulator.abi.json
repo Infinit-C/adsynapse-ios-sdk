@@ -1,0 +1,2149 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "AdSynapseSdk",
+    "printedName": "AdSynapseSdk",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AdSynapseSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AdSupport",
+        "printedName": "AdSupport",
+        "declKind": "Import",
+        "moduleName": "AdSynapseSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "AppTrackingTransparency",
+        "printedName": "AppTrackingTransparency",
+        "declKind": "Import",
+        "moduleName": "AdSynapseSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AdSynapseSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "Logging",
+        "printedName": "Logging",
+        "declKind": "Import",
+        "moduleName": "AdSynapseSdk",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Alamofire",
+        "printedName": "Alamofire",
+        "declKind": "Import",
+        "moduleName": "AdSynapseSdk",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AdSynapseNetworkErrorInfo",
+        "printedName": "AdSynapseNetworkErrorInfo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12AdSynapseSdk0aB16NetworkErrorInfoV11descriptionSSvp",
+            "mangledName": "$s12AdSynapseSdk0aB16NetworkErrorInfoV11descriptionSSvp",
+            "moduleName": "AdSynapseSdk",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12AdSynapseSdk0aB16NetworkErrorInfoV11descriptionSSvg",
+                "mangledName": "$s12AdSynapseSdk0aB16NetworkErrorInfoV11descriptionSSvg",
+                "moduleName": "AdSynapseSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorCode",
+            "printedName": "errorCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12AdSynapseSdk0aB16NetworkErrorInfoV9errorCodeSiSgvp",
+            "mangledName": "$s12AdSynapseSdk0aB16NetworkErrorInfoV9errorCodeSiSgvp",
+            "moduleName": "AdSynapseSdk",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12AdSynapseSdk0aB16NetworkErrorInfoV9errorCodeSiSgvg",
+                "mangledName": "$s12AdSynapseSdk0aB16NetworkErrorInfoV9errorCodeSiSgvg",
+                "moduleName": "AdSynapseSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12AdSynapseSdk0aB16NetworkErrorInfoV",
+        "mangledName": "$s12AdSynapseSdk0aB16NetworkErrorInfoV",
+        "moduleName": "AdSynapseSdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AdSynapseError",
+        "printedName": "AdSynapseError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "initializing",
+            "printedName": "initializing",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdSynapseSdk.AdSynapseError.Type) -> AdSynapseSdk.AdSynapseError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdSynapseError",
+                    "printedName": "AdSynapseSdk.AdSynapseError",
+                    "usr": "s:12AdSynapseSdk0aB5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdSynapseSdk.AdSynapseError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdSynapseError",
+                        "printedName": "AdSynapseSdk.AdSynapseError",
+                        "usr": "s:12AdSynapseSdk0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12AdSynapseSdk0aB5ErrorO12initializingyA2CmF",
+            "mangledName": "$s12AdSynapseSdk0aB5ErrorO12initializingyA2CmF",
+            "moduleName": "AdSynapseSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "networkError",
+            "printedName": "networkError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdSynapseSdk.AdSynapseError.Type) -> (AdSynapseSdk.AdSynapseNetworkErrorInfo) -> AdSynapseSdk.AdSynapseError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AdSynapseSdk.AdSynapseNetworkErrorInfo) -> AdSynapseSdk.AdSynapseError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdSynapseError",
+                        "printedName": "AdSynapseSdk.AdSynapseError",
+                        "usr": "s:12AdSynapseSdk0aB5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(info: AdSynapseSdk.AdSynapseNetworkErrorInfo)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AdSynapseNetworkErrorInfo",
+                            "printedName": "AdSynapseSdk.AdSynapseNetworkErrorInfo",
+                            "usr": "s:12AdSynapseSdk0aB16NetworkErrorInfoV"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdSynapseSdk.AdSynapseError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdSynapseError",
+                        "printedName": "AdSynapseSdk.AdSynapseError",
+                        "usr": "s:12AdSynapseSdk0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12AdSynapseSdk0aB5ErrorO07networkD0yAcA0ab7NetworkD4InfoV_tcACmF",
+            "mangledName": "$s12AdSynapseSdk0aB5ErrorO07networkD0yAcA0ab7NetworkD4InfoV_tcACmF",
+            "moduleName": "AdSynapseSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "parameterError",
+            "printedName": "parameterError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdSynapseSdk.AdSynapseError.Type) -> AdSynapseSdk.AdSynapseError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdSynapseError",
+                    "printedName": "AdSynapseSdk.AdSynapseError",
+                    "usr": "s:12AdSynapseSdk0aB5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdSynapseSdk.AdSynapseError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdSynapseError",
+                        "printedName": "AdSynapseSdk.AdSynapseError",
+                        "usr": "s:12AdSynapseSdk0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12AdSynapseSdk0aB5ErrorO09parameterD0yA2CmF",
+            "mangledName": "$s12AdSynapseSdk0aB5ErrorO09parameterD0yA2CmF",
+            "moduleName": "AdSynapseSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "badRequest",
+            "printedName": "badRequest",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdSynapseSdk.AdSynapseError.Type) -> AdSynapseSdk.AdSynapseError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdSynapseError",
+                    "printedName": "AdSynapseSdk.AdSynapseError",
+                    "usr": "s:12AdSynapseSdk0aB5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdSynapseSdk.AdSynapseError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdSynapseError",
+                        "printedName": "AdSynapseSdk.AdSynapseError",
+                        "usr": "s:12AdSynapseSdk0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12AdSynapseSdk0aB5ErrorO10badRequestyA2CmF",
+            "mangledName": "$s12AdSynapseSdk0aB5ErrorO10badRequestyA2CmF",
+            "moduleName": "AdSynapseSdk"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:12AdSynapseSdk0aB5ErrorO",
+        "mangledName": "$s12AdSynapseSdk0aB5ErrorO",
+        "moduleName": "AdSynapseSdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AdSize",
+        "printedName": "AdSize",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "width",
+            "printedName": "width",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12AdSynapseSdk0A4SizeC5widthSivp",
+            "mangledName": "$s12AdSynapseSdk0A4SizeC5widthSivp",
+            "moduleName": "AdSynapseSdk",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12AdSynapseSdk0A4SizeC5widthSivg",
+                "mangledName": "$s12AdSynapseSdk0A4SizeC5widthSivg",
+                "moduleName": "AdSynapseSdk",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "height",
+            "printedName": "height",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12AdSynapseSdk0A4SizeC6heightSivp",
+            "mangledName": "$s12AdSynapseSdk0A4SizeC6heightSivp",
+            "moduleName": "AdSynapseSdk",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12AdSynapseSdk0A4SizeC6heightSivg",
+                "mangledName": "$s12AdSynapseSdk0A4SizeC6heightSivg",
+                "moduleName": "AdSynapseSdk",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "getDefaultAdSize",
+            "printedName": "getDefaultAdSize()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdSize",
+                "printedName": "AdSynapseSdk.AdSize",
+                "usr": "s:12AdSynapseSdk0A4SizeC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12AdSynapseSdk0A4SizeC010getDefaultaD0ACyFZ",
+            "mangledName": "$s12AdSynapseSdk0A4SizeC010getDefaultaD0ACyFZ",
+            "moduleName": "AdSynapseSdk",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAdSize",
+            "printedName": "getAdSize(width:height:orientation:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdSize",
+                "printedName": "AdSynapseSdk.AdSize",
+                "usr": "s:12AdSynapseSdk0A4SizeC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIInterfaceOrientation",
+                "printedName": "UIKit.UIInterfaceOrientation",
+                "usr": "c:@E@UIInterfaceOrientation"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12AdSynapseSdk0A4SizeC03getaD05width6height11orientationACSi_SiSo22UIInterfaceOrientationVtFZ",
+            "mangledName": "$s12AdSynapseSdk0A4SizeC03getaD05width6height11orientationACSi_SiSo22UIInterfaceOrientationVtFZ",
+            "moduleName": "AdSynapseSdk",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:12AdSynapseSdk0A4SizeC",
+        "mangledName": "$s12AdSynapseSdk0A4SizeC",
+        "moduleName": "AdSynapseSdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AdType",
+        "printedName": "AdType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "banner",
+            "printedName": "banner",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdSynapseSdk.AdType.Type) -> AdSynapseSdk.AdType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdType",
+                    "printedName": "AdSynapseSdk.AdType",
+                    "usr": "s:12AdSynapseSdk0A4TypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdSynapseSdk.AdType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdType",
+                        "printedName": "AdSynapseSdk.AdType",
+                        "usr": "s:12AdSynapseSdk0A4TypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12AdSynapseSdk0A4TypeO6banneryA2CmF",
+            "mangledName": "$s12AdSynapseSdk0A4TypeO6banneryA2CmF",
+            "moduleName": "AdSynapseSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "native",
+            "printedName": "native",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdSynapseSdk.AdType.Type) -> AdSynapseSdk.AdType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdType",
+                    "printedName": "AdSynapseSdk.AdType",
+                    "usr": "s:12AdSynapseSdk0A4TypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdSynapseSdk.AdType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdType",
+                        "printedName": "AdSynapseSdk.AdType",
+                        "usr": "s:12AdSynapseSdk0A4TypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12AdSynapseSdk0A4TypeO6nativeyA2CmF",
+            "mangledName": "$s12AdSynapseSdk0A4TypeO6nativeyA2CmF",
+            "moduleName": "AdSynapseSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "video",
+            "printedName": "video",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdSynapseSdk.AdType.Type) -> AdSynapseSdk.AdType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdType",
+                    "printedName": "AdSynapseSdk.AdType",
+                    "usr": "s:12AdSynapseSdk0A4TypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdSynapseSdk.AdType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdType",
+                        "printedName": "AdSynapseSdk.AdType",
+                        "usr": "s:12AdSynapseSdk0A4TypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12AdSynapseSdk0A4TypeO5videoyA2CmF",
+            "mangledName": "$s12AdSynapseSdk0A4TypeO5videoyA2CmF",
+            "moduleName": "AdSynapseSdk"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdType",
+                "printedName": "AdSynapseSdk.AdType",
+                "usr": "s:12AdSynapseSdk0A4TypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdType",
+                "printedName": "AdSynapseSdk.AdType",
+                "usr": "s:12AdSynapseSdk0A4TypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12AdSynapseSdk0A4TypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s12AdSynapseSdk0A4TypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "AdSynapseSdk",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12AdSynapseSdk0A4TypeO9hashValueSivp",
+            "mangledName": "$s12AdSynapseSdk0A4TypeO9hashValueSivp",
+            "moduleName": "AdSynapseSdk",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12AdSynapseSdk0A4TypeO9hashValueSivg",
+                "mangledName": "$s12AdSynapseSdk0A4TypeO9hashValueSivg",
+                "moduleName": "AdSynapseSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12AdSynapseSdk0A4TypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s12AdSynapseSdk0A4TypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "AdSynapseSdk",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:12AdSynapseSdk0A4TypeO",
+        "mangledName": "$s12AdSynapseSdk0A4TypeO",
+        "moduleName": "AdSynapseSdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AdRequest",
+        "printedName": "AdRequest",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "adSize",
+            "printedName": "adSize",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AdSynapseSdk.AdSize?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdSize",
+                    "printedName": "AdSynapseSdk.AdSize",
+                    "usr": "s:12AdSynapseSdk0A4SizeC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12AdSynapseSdk0A7RequestC6adSizeAA0aF0CSgvp",
+            "mangledName": "$s12AdSynapseSdk0A7RequestC6adSizeAA0aF0CSgvp",
+            "moduleName": "AdSynapseSdk",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AdSynapseSdk.AdSize?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdSize",
+                        "printedName": "AdSynapseSdk.AdSize",
+                        "usr": "s:12AdSynapseSdk0A4SizeC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12AdSynapseSdk0A7RequestC6adSizeAA0aF0CSgvg",
+                "mangledName": "$s12AdSynapseSdk0A7RequestC6adSizeAA0aF0CSgvg",
+                "moduleName": "AdSynapseSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AdSynapseSdk.AdSize?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdSize",
+                        "printedName": "AdSynapseSdk.AdSize",
+                        "usr": "s:12AdSynapseSdk0A4SizeC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12AdSynapseSdk0A7RequestC6adSizeAA0aF0CSgvs",
+                "mangledName": "$s12AdSynapseSdk0A7RequestC6adSizeAA0aF0CSgvs",
+                "moduleName": "AdSynapseSdk",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12AdSynapseSdk0A7RequestC6adSizeAA0aF0CSgvM",
+                "mangledName": "$s12AdSynapseSdk0A7RequestC6adSizeAA0aF0CSgvM",
+                "moduleName": "AdSynapseSdk",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "adType",
+            "printedName": "adType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AdSynapseSdk.AdType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdType",
+                    "printedName": "AdSynapseSdk.AdType",
+                    "usr": "s:12AdSynapseSdk0A4TypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12AdSynapseSdk0A7RequestC6adTypeAA0aF0OSgvp",
+            "mangledName": "$s12AdSynapseSdk0A7RequestC6adTypeAA0aF0OSgvp",
+            "moduleName": "AdSynapseSdk",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AdSynapseSdk.AdType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdType",
+                        "printedName": "AdSynapseSdk.AdType",
+                        "usr": "s:12AdSynapseSdk0A4TypeO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12AdSynapseSdk0A7RequestC6adTypeAA0aF0OSgvg",
+                "mangledName": "$s12AdSynapseSdk0A7RequestC6adTypeAA0aF0OSgvg",
+                "moduleName": "AdSynapseSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AdSynapseSdk.AdType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdType",
+                        "printedName": "AdSynapseSdk.AdType",
+                        "usr": "s:12AdSynapseSdk0A4TypeO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12AdSynapseSdk0A7RequestC6adTypeAA0aF0OSgvs",
+                "mangledName": "$s12AdSynapseSdk0A7RequestC6adTypeAA0aF0OSgvs",
+                "moduleName": "AdSynapseSdk",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12AdSynapseSdk0A7RequestC6adTypeAA0aF0OSgvM",
+                "mangledName": "$s12AdSynapseSdk0A7RequestC6adTypeAA0aF0OSgvM",
+                "moduleName": "AdSynapseSdk",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "slotCode",
+            "printedName": "slotCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12AdSynapseSdk0A7RequestC8slotCodeSSSgvp",
+            "mangledName": "$s12AdSynapseSdk0A7RequestC8slotCodeSSSgvp",
+            "moduleName": "AdSynapseSdk",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12AdSynapseSdk0A7RequestC8slotCodeSSSgvg",
+                "mangledName": "$s12AdSynapseSdk0A7RequestC8slotCodeSSSgvg",
+                "moduleName": "AdSynapseSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12AdSynapseSdk0A7RequestC8slotCodeSSSgvs",
+                "mangledName": "$s12AdSynapseSdk0A7RequestC8slotCodeSSSgvs",
+                "moduleName": "AdSynapseSdk",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12AdSynapseSdk0A7RequestC8slotCodeSSSgvM",
+                "mangledName": "$s12AdSynapseSdk0A7RequestC8slotCodeSSSgvM",
+                "moduleName": "AdSynapseSdk",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdRequest",
+                "printedName": "AdSynapseSdk.AdRequest",
+                "usr": "s:12AdSynapseSdk0A7RequestC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12AdSynapseSdk0A7RequestCACycfc",
+            "mangledName": "$s12AdSynapseSdk0A7RequestCACycfc",
+            "moduleName": "AdSynapseSdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:12AdSynapseSdk0A7RequestC",
+        "mangledName": "$s12AdSynapseSdk0A7RequestC",
+        "moduleName": "AdSynapseSdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AdSynapse",
+        "printedName": "AdSynapse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "instance",
+            "printedName": "instance",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdSynapse",
+                "printedName": "AdSynapseSdk.AdSynapse",
+                "usr": "s:12AdSynapseSdk0aB0C"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12AdSynapseSdk0aB0C8instanceACvpZ",
+            "mangledName": "$s12AdSynapseSdk0aB0C8instanceACvpZ",
+            "moduleName": "AdSynapseSdk",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdSynapse",
+                    "printedName": "AdSynapseSdk.AdSynapse",
+                    "usr": "s:12AdSynapseSdk0aB0C"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12AdSynapseSdk0aB0C8instanceACvgZ",
+                "mangledName": "$s12AdSynapseSdk0aB0C8instanceACvgZ",
+                "moduleName": "AdSynapseSdk",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isInitilaized",
+            "printedName": "isInitilaized",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12AdSynapseSdk0aB0C13isInitilaizedSbvp",
+            "mangledName": "$s12AdSynapseSdk0aB0C13isInitilaizedSbvp",
+            "moduleName": "AdSynapseSdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12AdSynapseSdk0aB0C13isInitilaizedSbvg",
+                "mangledName": "$s12AdSynapseSdk0aB0C13isInitilaizedSbvg",
+                "moduleName": "AdSynapseSdk",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(debug:other:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12AdSynapseSdk0aB0C10initialize5debug5otherySb_SDySSypGSgtFZ",
+            "mangledName": "$s12AdSynapseSdk0aB0C10initialize5debug5otherySb_SDySSypGSgtFZ",
+            "moduleName": "AdSynapseSdk",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deinitialize",
+            "printedName": "deinitialize()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12AdSynapseSdk0aB0C12deinitializeyyFZ",
+            "mangledName": "$s12AdSynapseSdk0aB0C12deinitializeyyFZ",
+            "moduleName": "AdSynapseSdk",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadAd",
+            "printedName": "loadAd(request:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdRequest",
+                "printedName": "AdSynapseSdk.AdRequest",
+                "usr": "s:12AdSynapseSdk0A7RequestC"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Foundation.Data, AdSynapseSdk.AdSynapseError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Foundation.Data, AdSynapseSdk.AdSynapseError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdSynapseError",
+                        "printedName": "AdSynapseSdk.AdSynapseError",
+                        "usr": "s:12AdSynapseSdk0aB5ErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12AdSynapseSdk0aB0C04loadA07request10completionyAA0A7RequestC_ys6ResultOy10Foundation4DataVAA0aB5ErrorOGctF",
+            "mangledName": "$s12AdSynapseSdk0aB0C04loadA07request10completionyAA0A7RequestC_ys6ResultOy10Foundation4DataVAA0aB5ErrorOGctF",
+            "moduleName": "AdSynapseSdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:12AdSynapseSdk0aB0C",
+        "mangledName": "$s12AdSynapseSdk0aB0C",
+        "moduleName": "AdSynapseSdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AdSynapseSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "AdSynapseSdk"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BannerView",
+        "printedName": "BannerView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "slotCode",
+            "printedName": "slotCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12AdSynapseSdk10BannerViewC8slotCodeSSSgvp",
+            "mangledName": "$s12AdSynapseSdk10BannerViewC8slotCodeSSSgvp",
+            "moduleName": "AdSynapseSdk",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12AdSynapseSdk10BannerViewC8slotCodeSSSgvg",
+                "mangledName": "$s12AdSynapseSdk10BannerViewC8slotCodeSSSgvg",
+                "moduleName": "AdSynapseSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12AdSynapseSdk10BannerViewC8slotCodeSSSgvs",
+                "mangledName": "$s12AdSynapseSdk10BannerViewC8slotCodeSSSgvs",
+                "moduleName": "AdSynapseSdk",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12AdSynapseSdk10BannerViewC8slotCodeSSSgvM",
+                "mangledName": "$s12AdSynapseSdk10BannerViewC8slotCodeSSSgvM",
+                "moduleName": "AdSynapseSdk",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "adSize",
+            "printedName": "adSize",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AdSynapseSdk.AdSize?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdSize",
+                    "printedName": "AdSynapseSdk.AdSize",
+                    "usr": "s:12AdSynapseSdk0A4SizeC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12AdSynapseSdk10BannerViewC6adSizeAA0aG0CSgvp",
+            "mangledName": "$s12AdSynapseSdk10BannerViewC6adSizeAA0aG0CSgvp",
+            "moduleName": "AdSynapseSdk",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AdSynapseSdk.AdSize?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdSize",
+                        "printedName": "AdSynapseSdk.AdSize",
+                        "usr": "s:12AdSynapseSdk0A4SizeC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12AdSynapseSdk10BannerViewC6adSizeAA0aG0CSgvg",
+                "mangledName": "$s12AdSynapseSdk10BannerViewC6adSizeAA0aG0CSgvg",
+                "moduleName": "AdSynapseSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AdSynapseSdk.AdSize?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdSize",
+                        "printedName": "AdSynapseSdk.AdSize",
+                        "usr": "s:12AdSynapseSdk0A4SizeC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12AdSynapseSdk10BannerViewC6adSizeAA0aG0CSgvs",
+                "mangledName": "$s12AdSynapseSdk10BannerViewC6adSizeAA0aG0CSgvs",
+                "moduleName": "AdSynapseSdk",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12AdSynapseSdk10BannerViewC6adSizeAA0aG0CSgvM",
+                "mangledName": "$s12AdSynapseSdk10BannerViewC6adSizeAA0aG0CSgvM",
+                "moduleName": "AdSynapseSdk",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BannerView",
+                "printedName": "AdSynapseSdk.BannerView",
+                "usr": "c:@M@AdSynapseSdk@objc(cs)BannerView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AdSynapseSdk@objc(cs)BannerView(im)initWithFrame:",
+            "mangledName": "$s12AdSynapseSdk10BannerViewC5frameACSo6CGRectV_tcfc",
+            "moduleName": "AdSynapseSdk",
+            "overriding": true,
+            "objc_name": "initWithFrame:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AdSynapseSdk.BannerView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BannerView",
+                    "printedName": "AdSynapseSdk.BannerView",
+                    "usr": "c:@M@AdSynapseSdk@objc(cs)BannerView"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AdSynapseSdk@objc(cs)BannerView(im)initWithCoder:",
+            "mangledName": "$s12AdSynapseSdk10BannerViewC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "AdSynapseSdk",
+            "overriding": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Required",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "load",
+            "printedName": "load(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Foundation.Data, AdSynapseSdk.AdSynapseError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Foundation.Data, AdSynapseSdk.AdSynapseError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdSynapseError",
+                        "printedName": "AdSynapseSdk.AdSynapseError",
+                        "usr": "s:12AdSynapseSdk0aB5ErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12AdSynapseSdk10BannerViewC4load10completionyys6ResultOy10Foundation4DataVAA0aB5ErrorOGc_tF",
+            "mangledName": "$s12AdSynapseSdk10BannerViewC4load10completionyys6ResultOy10Foundation4DataVAA0aB5ErrorOGc_tF",
+            "moduleName": "AdSynapseSdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webView",
+            "printedName": "webView(_:didFinish:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "WebKit.WKNavigation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKNavigation",
+                    "printedName": "WebKit.WKNavigation",
+                    "usr": "c:objc(cs)WKNavigation"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdSynapseSdk@objc(cs)BannerView(im)webView:didFinishNavigation:",
+            "mangledName": "$s12AdSynapseSdk10BannerViewC03webE0_9didFinishySo05WKWebE0C_So12WKNavigationCSgtF",
+            "moduleName": "AdSynapseSdk",
+            "objc_name": "webView:didFinishNavigation:",
+            "declAttributes": [
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AdSynapseSdk@objc(cs)BannerView",
+        "mangledName": "$s12AdSynapseSdk10BannerViewC",
+        "moduleName": "AdSynapseSdk",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AdSynapseSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AdSupport",
+        "printedName": "AdSupport",
+        "declKind": "Import",
+        "moduleName": "AdSynapseSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "Alamofire",
+        "printedName": "Alamofire",
+        "declKind": "Import",
+        "moduleName": "AdSynapseSdk",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DeviceKit",
+        "printedName": "DeviceKit",
+        "declKind": "Import",
+        "moduleName": "AdSynapseSdk",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AdSynapseSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Network",
+        "printedName": "Network",
+        "declKind": "Import",
+        "moduleName": "AdSynapseSdk"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/abel\/Documents\/00-works\/01-ideate\/00-Projects\/sdk-ios\/AdSynapseSdk\/AdSynapse.swift",
+      "kind": "StringLiteral",
+      "offset": 255,
+      "length": 37,
+      "value": "\"com.infinitc.adsynapse.AdsynapseSdk\""
+    },
+    {
+      "filePath": "\/Users\/abel\/Documents\/00-works\/01-ideate\/00-Projects\/sdk-ios\/AdSynapseSdk\/AdSynapse.swift",
+      "kind": "BooleanLiteral",
+      "offset": 887,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/abel\/Documents\/00-works\/01-ideate\/00-Projects\/sdk-ios\/AdSynapseSdk\/AdSynapse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1065,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/abel\/Documents\/00-works\/01-ideate\/00-Projects\/sdk-ios\/AdSynapseSdk\/AdSynapse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1076,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/abel\/Documents\/00-works\/01-ideate\/00-Projects\/sdk-ios\/AdSynapseSdk\/AdSynapse.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4925,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/abel\/Documents\/00-works\/01-ideate\/00-Projects\/sdk-ios\/AdSynapseSdk\/AdSynapse.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5081,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/abel\/Documents\/00-works\/01-ideate\/00-Projects\/sdk-ios\/AdSynapseSdk\/InternalLibrary.swift",
+      "kind": "Dictionary",
+      "offset": 257,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/abel\/Documents\/00-works\/01-ideate\/00-Projects\/sdk-ios\/AdSynapseSdk\/InternalLibrary.swift",
+      "kind": "Dictionary",
+      "offset": 311,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/abel\/Documents\/00-works\/01-ideate\/00-Projects\/sdk-ios\/AdSynapseSdk\/InternalLibrary.swift",
+      "kind": "BooleanLiteral",
+      "offset": 353,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/abel\/Documents\/00-works\/01-ideate\/00-Projects\/sdk-ios\/AdSynapseSdk\/InternalLibrary.swift",
+      "kind": "BooleanLiteral",
+      "offset": 403,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/abel\/Documents\/00-works\/01-ideate\/00-Projects\/sdk-ios\/AdSynapseSdk\/NetworkMonitor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 640,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}
